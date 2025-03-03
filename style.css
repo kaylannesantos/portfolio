@@ -57,7 +57,11 @@ body{
 }
 
 span{
-    background: linear-gradient(270deg, #ff85c2 10%, #e2398d 100%);
+    background: linear-gradient(
+        270deg, 
+        #ff85c2 10%, 
+        #e2398d 100%
+    );
     background-clip: text;
     color: transparent;
 }
@@ -80,7 +84,11 @@ span{
     font-size: 1.8rem;
     padding: 1rem 2rem;
     border-radius: 3rem;
-    background: linear-gradient(270deg, #ff85c2 10%, #e2398d 100%);
+    background: linear-gradient(
+        270deg, 
+        #ff85c2 10%, 
+        #e2398d 100%
+    );
     letter-spacing: 1px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -113,19 +121,19 @@ section{
 }
 
 .home-content h1{
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
 }
 
 .home-content h3{
-    margin: 1rem;
-    font-size: 4rem;
+    margin: 1rem 0;
+    font-size: 3rem;
 }
 
 .home-content p{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.8;
 }
@@ -180,7 +188,7 @@ section{
     color: black;
     border: 2px solid transparent;
     font-weight: 600;
-    transition: 0.3s ease-in-out; 
+    transition: 0.3s ease-in-out;
 }
 
 .btn:hover{
@@ -189,14 +197,14 @@ section{
                 0  0 50px var(--main-color);
 }
 
-.btn-group a:nth-last-of-type(2){
+.btn-group a:nth-of-type(2){
     background-color: black;
     color: var(--main-color);
     border: 2px solid var(--main-color);
     box-shadow: 0 0 25px transparent;
 }
 
-.btn-group a:nth-last-of-type(2):hover{
+.btn-group a:nth-of-type(2):hover{
     box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color);
     color: black;
@@ -248,6 +256,11 @@ section{
     background-color: var(--bg-color);
 }
 
+.heading{
+    text-align: center;
+    font-size: 7rem;
+    margin: 5rem 0;
+}
 
 .projects{
     background-color: var(--second-bg-color);
@@ -276,7 +289,8 @@ section{
     cursor: pointer;
     box-shadow: 0 0 5px var(--main-color);
     transition: 0.3s ease;
-    margin: 0.5rem;
+    margin: 0.9rem;
+    width: 600px;
 }
 
 .project-card:hover{
@@ -296,6 +310,7 @@ section{
 }
 
 .project-card p{
+    overflow: hidden;
     font-size: 1.6rem;
 }
 
@@ -377,7 +392,7 @@ section{
         width: 50%;
         padding: 1rem 3rem;
         background: rgba(0, 0, 0, 0.8);
-        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
         display: none;
@@ -390,7 +405,7 @@ section{
         color: var(--text-color);
     }
 
-    .navbar .active{
+    .navbar.active{
         display: block;
     }
 
